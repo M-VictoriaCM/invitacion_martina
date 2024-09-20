@@ -1,0 +1,56 @@
+:root{
+    /* ------ color ------*/
+    --color__background:rgb(213, 213, 213);
+    --color_txt__light: rgb(255, 255, 255);
+    --color__principal: rgb(243, 190, 190);
+    --color__secundario: rgb(211, 132, 135);    
+    /*--------- fuente ----------*/
+    --font__principal: 'Northwell', sans-serif;
+    --font__secundaria: 'Albra', sans-serif;
+    --color__font_dark:rgb(0, 0, 0);
+    
+    
+
+    /*----------- button ------------*/
+    --color__btn:rgb(255, 215, 215);
+
+    
+    --color__shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.75);
+    --color__overlay:rgba(0, 0, 0, 0.2);
+    
+    --shadow__btn:rgba(255, 215, 215, 0.75);
+    --color__circle:rgb(254, 254, 254);
+}
+
+@font-face {
+    font-family: 'Albra-Bold';
+    src: url(../src/assets/font/Albra-Bold.otf);
+}
+@font-face {
+    font-family: 'Albra-Semi';
+    src: url(../src/assets/font/Albra-Semi.otf);
+}
+@font-face {
+    font-family: 'Albra-Medium';
+    src: url(../src/assets/font/Albra-Medium.otf);
+}
+@font-face {
+    font-family: 'Albra-Regular';
+    src: url(../src/assets/font/Albra-Regular.otf);
+}
+@font-face {
+    font-family: 'Albra-Light';
+    src: url(../src/assets/font/Albra-Light.otf);
+}
+@font-face {
+    font-family: 'Northwell';
+    src: url(../src/assets/font/Northwell.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--color__background);
+}

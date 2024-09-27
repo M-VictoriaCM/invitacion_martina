@@ -3,12 +3,25 @@
     --color__background:rgb(213, 213, 213);
     --color_txt__light: rgb(255, 255, 255);
     --color__principal: rgb(243, 190, 190);
-    --color__secundario: rgb(211, 132, 135);    
+    --color__secundario: rgb(211, 132, 135); 
+    --color__timer:#B8B2B2;   
     /*--------- fuente ----------*/
     --font__principal: 'Northwell', sans-serif;
     --font__secundaria: 'Albra', sans-serif;
     --color__font_dark:rgb(0, 0, 0);
-    
+    --font-size_11: 0.6875rem;
+    --font-size_12: 0.75rem;
+    --font-size_14: 0.875rem;
+    --font-size_16:1rem;
+    --font-size_18:1.125rem;
+    --font-size_24:1.5rem;
+    --font-size_28:1.75rem;
+    --font-size_32:2rem;
+    --font-size_36:2.25rem;
+    --font-size_42:2.625rem;
+    --font-size_48: 3rem;
+    --font-size_56:3.5rem;
+
     
 
     /*----------- button ------------*/
@@ -54,3 +67,17 @@
 body{
     background: var(--color__background);
 }
+/*Estilo del scrollbar*/
+::-webkit-scrollbar {
+    width: .5rem;
+    background-color: var(--color__secundario);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:var(--color__btn);
+    border-radius: 9px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color__principal);
+  }

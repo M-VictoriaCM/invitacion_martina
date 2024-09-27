@@ -15,8 +15,6 @@ const routes=[
         component: () => import('../views/Invitacion.vue')
     },
 ];
-
-
 const router = createRouter({
     history: createWebHashHistory(),
     routes

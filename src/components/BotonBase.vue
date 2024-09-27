@@ -32,7 +32,7 @@ export default {
 }
 .btn-mayor:hover{
     background:var(--color__secundario);
-    color: var(--color__btn);
+    color: var(--color_txt__light);
 }
 @media(max-width:360px) {
   .btn-mayor{

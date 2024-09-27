@@ -16,39 +16,57 @@ export default {
     </div>
 </template>
 <style>
-.cardSectionPort{
-    width:320px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    position:relative;
+.cardSectionPort {
+  max-width: 98%;
+  height: 220px;
+  position: relative;
 }
-.cardSectionPort img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+
+.cardSectionPort img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9px;
 }
-.overlay{
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color__overlay);
-  border-radius:15px;
-  border: 10px solid blur(5px);
+  background-color: rgba(0, 0, 0, 0.3); 
+  border-radius: 9px;
 }
 @media(max-width:360px) {
     .cardSectionPort{
-        width:250px;
-        height:100%;
+        width:100%;
+        height:150px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .cardSectionPort{
-        width:95%;
-        height:100%;
+        width:80%;
+        height:450px;
+        
     }
+    .cardSectionPort img {
+        width: 100%;
+        height: 400px;
+        border-radius: 20px;
+    }
+}
+@media (min-width: 1025px) {
+    .cardSectionPort{
+        min-width:52%;
+        height:300px;
+        display: flex;
+        align-items: center;
+        margin-left: 2%;
+    }
+    .cardSectionPort img {
+        height:405px;
+    }
+
 }
 </style>

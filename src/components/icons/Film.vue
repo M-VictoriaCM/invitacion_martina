@@ -1,46 +1,79 @@
 <template>
     <div class="container__film">
-        <div class="content_film left">
+        <div class="content left">
             <div class="cuadrado" v-for="n in 32" :key="'left-' + n"></div>
-        </div>  
+        </div>
+        <div class="content right">
+            <div class="cuadrado" v-for="n in 32" :key="'right-' + n"></div>
+        </div>
     </div>
 </template>
 <style>
-.container__film{    
-    width: 40px;
-    min-height:100%;
-    display:flex;
-    justify-content: center;
-    position:relative;
-    z-index: 0;
+.container__film {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -3;
 }
-.cuadrado{
-    width:25px;
-    height: 20px;
-    border-radius: 5px;
-    background: white;
-    margin-bottom: .5rem;
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 2rem;
 }
+
+.left {
+    position: fIxed;
+    left: .5rem;
+}
+
+.right {
+    position: fixed;
+    right: .5rem;
+}
+
+.cuadrado {
+    width: 1.5rem;
+    height: 1.7rem;
+    border-radius: 0.25rem;
+    background-color: white;
+    margin-bottom: 0.5rem;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
-    .container__film{
-        width:60px;
-        min-height:100vh;
+    .film__dinamic {
+        height: 100%;
     }
-    .cuadrado{
-    width:30px;
-    height: 25px;
-    margin-bottom: .75rem;
+
+    .content {
+        width: 2rem;
+    }
+
+    .cuadrado {
+        width: 2rem;
+        height: 2.3rem;
+        margin-bottom: 2rem;
     }
 }
 
 @media (min-width: 1025px) {
-    .container__film{
-        width:60px;
+    .film__dinamic {
+        height: 100%;
     }
-    .cuadrado{
-        width:35px;
-        height: 30px;
-        margin-bottom: 1rem;
+
+    .content {
+        width: 3rem;
+    }
+
+    .cuadrado {
+        width: 3rem;
+        height: 3.3rem;
+        margin-bottom: 3rem;
     }
 }
 </style>

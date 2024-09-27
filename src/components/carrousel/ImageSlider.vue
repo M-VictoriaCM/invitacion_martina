@@ -1,9 +1,10 @@
 <script>
 //Imágenes
-import carrusel1 from '@/assets/img/quinceanera(1).jpg';
-import carrusel2 from "@/assets/img/quinceanera(2).jpg";
-import carrusel3 from "@/assets/img/full-shot-smiley-girl-putting-shoes.jpg";
-import carrusel4 from "@/assets/img/quinceanera.jpg";
+import carrusel1 from '../../assets/img/quinceaniera(1).jpg';
+import carrusel2 from '../../assets/img/quinceaniera(2).jpg';
+import carrusel3 from '../../assets/img/quinceaniera(4).jpg';
+import carrusel4 from '../../assets/img/quinceaniera(5).jpg';
+import carrusel5 from '../../assets/img/quinceaniera(6).jpg';
 export default {
     data() {
     return {
@@ -11,7 +12,8 @@ export default {
         { img: carrusel1 },
         { img: carrusel2 },
         { img: carrusel3 },
-        { img: carrusel4 }
+        { img: carrusel4 },
+        { img: carrusel5 }
     ],
       isDragStart: false,
       isDragging: false,

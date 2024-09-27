@@ -10,7 +10,7 @@ export default {
     <div class="section__timer">
         <div class="countdown">
             <!--Cargar fecha-->
-            <counter :year="2024" :month="12" :date="31" :hour="20" :minute="0" :second="0" :millisecond="31" />
+            <counter :year="2024" :month="12" :date="27" :hour="20" :minute="0" :second="0" :millisecond="31" />
         </div>
     </div>
 </template>

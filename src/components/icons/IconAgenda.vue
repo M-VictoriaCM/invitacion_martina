@@ -1,7 +1,7 @@
 
 <template>
     <div>
-        <svg class="icon_agenda" version="1.0" xmlns="http://www.w3.org/2000/svg"
+        <svg id="icon_agenda" version="1.0" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
             <metadata>
                 Created by potrace 1.16, written by Peter Selinger 2001-2019
@@ -48,9 +48,9 @@
     </div>
 </template>
 <style>
-.icon_agenda{
+#icon_agenda{
     width:45px;
-    height:45px;
+    height:50px;
     fill:var(--color__secundario);
     stroke: none;
 }
@@ -64,6 +64,12 @@
     }
     to{
         transform: rotate(540deg);
+    }
+}
+@media (min-width: 1025px) {
+    #icon_agenda{
+        width: 90px;
+        height: 100px;
     }
 }
 </style>

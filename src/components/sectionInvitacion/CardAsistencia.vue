@@ -8,10 +8,10 @@ export default {
   },
   data() {
     return {
-      date: 'Sábado 03 de Agosto 21:00hs',
+      date: 'Sábado 27 de diciembre 21:00hs',
       mostrarModalAsist: false,
       popup: false,
-      limite: "(Tenés tiempo hasta el 15 de julio)"
+      limite: "(Tenés tiempo hasta el 15 de noviembre)"
     }
   },
   methods: {

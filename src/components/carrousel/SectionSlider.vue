@@ -1,25 +1,16 @@
 <script>
 import ImageSlider from './ImageSlider.vue';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 export default {
     name:'SectionSlider',
     components:{
         ImageSlider
     }
-    ,
-    mounted() {
-    // Inicializar AOS cuando el componente está montado
-        AOS.init({
-        });
-    }
+
 }
 </script>
 <template>
-    <div class="sectionSlider__content"
-    data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+    <div class="sectionSlider__content">
         <ImageSlider/>
     </div>
 </template>

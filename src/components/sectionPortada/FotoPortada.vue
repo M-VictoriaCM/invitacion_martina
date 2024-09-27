@@ -1,5 +1,5 @@
 <script>
-import foto01 from '@/assets/img/quinceanera(3).jpg';
+import foto01 from '@/assets/img/quinceaniera(3).jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 export default {

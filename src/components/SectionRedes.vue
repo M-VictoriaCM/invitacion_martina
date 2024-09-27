@@ -3,6 +3,8 @@ import Swal from 'sweetalert2';
 import IconInstagram from './icons/IconInstagram.vue';
 import BotonBase from './BotonBase.vue';
 import SectionFooter from './SectionFooter.vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default {
     name: 'SectionRedes',
     components: {
@@ -32,14 +34,22 @@ export default {
             text:'¡El texto ha sido copiado!',
             confirmButtonText:'OK'
            });
-        }
+        },
+        mounted() {
+        // Inicializar AOS cuando el componente está montado
+        AOS.init({
+        // Configura las opciones si es necesario
+        duration: 1000,
+        });
+    }
+        
         
     }
 }
 </script>
 <template>
     <div class="container__redes">
-        <div class="content__redes">
+        <div data-aos="zoom-in-up" class="content__redes">
             <h1 class="title_redes">{{ title }}</h1>
             <h2 class="subtitle_redes">{{ subtitle }}</h2>
             <icon-instagram class="icon__redes"/>

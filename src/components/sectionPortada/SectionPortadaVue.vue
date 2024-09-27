@@ -6,16 +6,18 @@ export default {
   name: 'SectionPortadaVue',
   components: {
     FotoPortada, CardInvitacion
-  }
+  },
+  
 }
 </script>
 <template>
-    <div class="container_section">
+    <div data-aos="fade-up" class="container_section">
         <FotoPortada class="foto" />
         <CardInvitacion class="invitacion" />
     </div>
 </template>
 <style>
+
 .container_section {
     width: 100%;
     height: 440px;

@@ -24,6 +24,9 @@ export default {
     background: rgba(128, 128, 128, .5);
 
 }
+a{
+    text-decoration: none;
+}
 .text_desarrolladores{
     display: flex;
     flex-direction: row;

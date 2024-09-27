@@ -1,12 +1,21 @@
 <script>
 import foto01 from '@/assets/img/quinceanera(3).jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default {
     name:'FotoPortada',
     data(){
         return{
             foto01
         }
-    }
+    },
+    mounted() {
+    // Inicializar AOS cuando el componente está montado
+    AOS.init({
+      // Configura las opciones si es necesario
+      duration: 1200,
+    });
+  }
 }
 </script>
 <template>

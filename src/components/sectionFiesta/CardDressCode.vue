@@ -1,6 +1,8 @@
 <script>
 import IconDress from '../icons/IconDress.vue';
 import TarjetaBase from './TarjetaBase.vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default {
   name:'CardDress',
@@ -13,6 +15,13 @@ export default {
       title:'DRESS CODE',
       description:'Elegante Sport'
     }
+  },
+    mounted() {
+    // Inicializar AOS cuando el componente está montado
+    AOS.init({
+      // Configura las opciones si es necesario
+      duration: 1000,
+    });
   }
 }
 </script>

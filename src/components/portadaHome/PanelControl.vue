@@ -14,13 +14,17 @@ export default {
   components: {
     ButonBase
   },
+  setup() {
+    const audioController = inject('audioController');
+    return { audioController };
+  },
   methods: {
     enterWithMusic() {
-    //   this.audioController.play();
+      this.audioController.play();
       this.$router.push({ name: 'Invitacion' });
     },
     enterWithoutMusic() {
-    //   this.audioController.stop();
+      this.audioController.stop();
       this.$router.push({ name: 'Invitacion' });
     }
   }
@@ -33,7 +37,7 @@ export default {
             <p class="panel_subtitle">{{ description }}</p>
             <div class="container_button">
                 <ButonBase label="INGRESAR CON MUSICA" customClass="btn-mayor btn_ingreso btn1" @click="enterWithMusic"/>
-                <ButonBase label="INGRESAR SIN MUSICA" customClass="btn-mayor btn_ingreso" @click="enterWithMusic"/>
+                <ButonBase label="INGRESAR SIN MUSICA" customClass="btn-mayor btn_ingreso" @click="enterWithoutMusic"/>
             </div>
         </div>
         <img :src="refl_der" class="refl_der" alt="">

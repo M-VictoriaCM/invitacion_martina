@@ -25,7 +25,7 @@ export default {
     margin: auto;
     margin-top: 13%;
     border-radius: 50%;
-    background: var(--color__principal_dark);
+    background: var(--color__secundario);
     transform: rotate(180deg);
   }
   .music,

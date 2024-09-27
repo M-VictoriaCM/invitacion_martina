@@ -1,6 +1,8 @@
 <script>
 import film from '@/assets/img/film1.webp';
 import Timer from './Timer.vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default {
   name: 'Cuadrante',
   components: {
@@ -10,11 +12,19 @@ export default {
     return {
       film
     }
+  },
+    mounted() {
+    // Inicializar AOS cuando el componente está montado
+    AOS.init({
+      // Configura las opciones si es necesario
+      duration: 1000,
+    });
   }
+  
 }
 </script>
 <template>
-    <div class="container__cuadrante">
+    <div data-aos="fade-right" class="container__cuadrante">
         <img :src="film" class="background_count" alt="film">
         <timer class="timer" />
     </div>

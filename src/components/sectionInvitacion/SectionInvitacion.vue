@@ -1,15 +1,20 @@
 <script>
 import CardBase from './CardBase.vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default {
     name:'SectionInvitacion',
     components:{
         CardBase
-    },
+    }
     
 }
 </script>
 <template>
-    <div class="marco__section-card">
+    <div class="marco__section-card"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         <CardBase/>
     </div>
 </template>

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "add-to-calendar-button": "^2.6.20",
+    "aos": "^2.3.4",
     "sweetalert2": "^11.14.1",
     "vue": "^3.4.37",
     "vue-router": "^4.4.5"

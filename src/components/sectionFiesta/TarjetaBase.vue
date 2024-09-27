@@ -1,5 +1,7 @@
 <script>
 import CodigoBarra from '../popups/CodigoBarra.vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default {
   name: 'CardBase',
   data() {
@@ -11,11 +13,18 @@ export default {
   },
   components: {
     CodigoBarra
+  },
+    mounted() {
+    // Inicializar AOS cuando el componente está montado
+    AOS.init({
+      // Configura las opciones si es necesario
+      duration: 1000,
+    });
   }
 }
 </script>
 <template>
-  <div class="container__card">
+  <div data-aos="fade-right" class="container__card">
     <div class="container__line">
       <div class="card__image">
         <div class="icon__card">

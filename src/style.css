@@ -1,3 +1,5 @@
+@import 'aos/dist/aos.css';
+
 :root{
     /* ------ color ------*/
     --color__background:rgb(213, 213, 213);

@@ -83,7 +83,7 @@ export default {
             <i ref="left" id="left" @click="scroll('left')" class="fa-solid fa-chevron-left"></i>
             <div class="carousel" ref="carousel" @mousedown="dragStart" @touchstart="dragStart" @mousemove="dragging"
                 @touchmove="dragging" @mouseup="dragStop" @mouseleave="dragStop" @touchend="dragStop">
-                <img 
+                <img  class="imagen"
                 v-for="(image, index) in images" 
                 :key="index" 
                 :src="image.img"
@@ -170,7 +170,6 @@ export default {
     transition: transform 0.5s ease-in-out; 
     border-radius: 9px;
 }
-
 .carousel img:first-child {
     margin-left: 0px;
 }

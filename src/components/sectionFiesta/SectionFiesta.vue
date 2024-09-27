@@ -1,7 +1,7 @@
 <script>
 import CardGift from './CardGift.vue';
 import CardDressCode from './CardDressCode.vue';
-import CardAgenda from './cardAgenda.vue';
+import CardAgenda from './CardAgenda.vue';
 export default {
     name:'SectionFiesta',
     components:{
@@ -31,9 +31,10 @@ export default {
 @media (min-width: 768px) and (max-width: 991px) {
     .sectionFiesta_content{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        width:80%;
+        width:100%;
         height:80%;
     }
 }

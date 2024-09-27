@@ -2,6 +2,7 @@
 import IconAgenda from '../icons/IconAgenda.vue';
 import TarjetaBase from './TarjetaBase.vue';
 import BotonBase from '../BotonBase.vue';
+import 'add-to-calendar-button';
 export default {
     name:'CardAgenda',
     components:{
@@ -33,8 +34,17 @@ export default {
           <h1 class="card__title">{{ title }}</h1>
           <p class="card__description">{{ description }}</p>
           <div class="card__buttom ">
-            <popup-bancario v-show="popup" @close="togglePopUp()" />
-            <BotonBase label="Agendar" customClass="btn-mayor" class="btn_popup" @click="togglePopUp()" />
+            <add-to-calendar-button
+                id="css-part-example"
+                label="Agendar"
+                name="Cumple de Marti"
+                options="'Apple','Google'"
+                location="La Cascada Eventos"
+                startDate="2024-10-24"
+                endDate="2024-10-24"
+                startTime="10:00"
+                endTime="21:00"
+            ></add-to-calendar-button>
           </div>
         </template>
       </TarjetaBase>
@@ -42,6 +52,17 @@ export default {
   </template>
   
   <style scoped>
+  add-to-calendar-button#css-part-example::part(atcb-button),
+  #atcb-btn-css-part-example-modal-host::part(atcb-button){
+    width: 160px;
+    background: var(--color__btn);
+    color:var(--color__secundario);
+    border: 1px solid var(--line__buttom);
+    font-family:Albra-Regular;
+    font-size: small;
+    padding: 1rem 1rem;
+    margin:0;
+}
   .card__gift{
     margin-top:2rem;
   }
@@ -69,9 +90,19 @@ export default {
   .btn_popup {
     width: 200px;
   }
+  .card__buttom{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @media (min-width: 768px) and (max-width: 991px) {
     .card__gift{
       margin:0;
     }
+    add-to-calendar-button#css-part-example::part(atcb-button),
+  #atcb-btn-css-part-example-modal-host::part(atcb-button){
+    width:160px;
+  }
   }
   </style>

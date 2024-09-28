@@ -10,8 +10,9 @@ export default defineConfig({
       compilerOptions: {
         isCustomElement: (tag) => tag.startsWith('add-')
       }
-    }}
+    }},                
   )],
+  base:'https://m-victoriacm.github.io/invitacion_martina',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

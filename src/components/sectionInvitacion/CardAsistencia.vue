@@ -1,5 +1,5 @@
 <script>
-import PopupAsistencia from '../popups/PopupAsistencia.vue';
+const PopupAsistencia = () => import('../popups/PopupAsistencia.vue');
 import IconParty from '../icons/IconParty.vue';
 import BotonBase from '../BotonBase.vue';
 export default {

@@ -36,7 +36,7 @@ export default {
         <div class="panel_content">
             <p class="panel_subtitle">{{ description }}</p>
             <div class="container_button">
-                <ButonBase label="INGRESAR CON MUSICA" customClass="btn-mayor btn_ingreso btn1" @click="enterWithMusic"/>
+                <ButonBase label="INGRESAR CON MUSICA" customClass="btn-mayor btn_ingreso " @click="enterWithMusic"/>
                 <ButonBase label="INGRESAR SIN MUSICA" customClass="btn-mayor btn_ingreso" @click="enterWithoutMusic"/>
             </div>
         </div>
@@ -45,7 +45,7 @@ export default {
 </template>
 <style>
 .panel_container {
-    width: 100%;
+    width: 330px;
     height:100%;
     display: flex;
     flex-direction: row;
@@ -68,6 +68,10 @@ export default {
 
 .container_button {
     width: 100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .refl_izq,
 .refl_der{

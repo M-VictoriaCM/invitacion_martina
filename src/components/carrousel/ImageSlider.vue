@@ -1,10 +1,10 @@
 <script>
 //Imágenes
-import carrusel1 from '../../assets/img/quinceaniera(1).jpg';
-import carrusel2 from '../../assets/img/quinceaniera(2).jpg';
-import carrusel3 from '../../assets/img/quinceaniera(4).jpg';
-import carrusel4 from '../../assets/img/quinceaniera(5).jpg';
-import carrusel5 from '../../assets/img/quinceaniera(6).jpg';
+import carrusel1 from '@/assets/img/quinceaniera(1).webp';
+import carrusel2 from '@/assets/img/quinceaniera(2).webp';
+import carrusel3 from '@/assets/img/quinceaniera(4).webp';
+import carrusel4 from '@/assets/img/quinceaniera(5).webp';
+import carrusel5 from '@/assets/img/quinceaniera(6).webp';
 export default {
     data() {
     return {

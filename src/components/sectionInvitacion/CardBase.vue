@@ -20,7 +20,7 @@ export default {
     <div class="notch left-bottom"></div>
     <div class="notch right-top"></div>
     <div class="notch right-bottom"></div>
-    <h1 class="card__info__title">{{ title }}</h1>
+    <h1 class="card__info__title" >{{ title }}</h1>
     <div class="section_card__content">
       <CardAsistencia />
     </div>

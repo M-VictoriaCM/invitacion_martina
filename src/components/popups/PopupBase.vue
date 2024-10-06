@@ -36,15 +36,16 @@ export default {
 <style scoped>
 .pop-up{
     position:fixed;
-    top:0;
+    top:0%;
     left:0;
-    z-index:1000;
-    padding:32px 16px 120px;
+    z-index:500;
     height:100vh;
     width:100%;
+    padding: 3rem .5rem;
     background:rgba(0, 0, 0, .3);
     display: grid;
-    place-items: center;
+    justify-items: center;
+    align-content: center
 }
 .pop-up-inner{
     background-color: #fff;
@@ -52,8 +53,8 @@ export default {
     position:relative;
     padding:40px;
     border-radius:9px;
-    width:90%;
-    height:550px;
+    width:320px;
+    height:520px;
     box-shadow: var(--shadow);
     transition:all 250ms ease-in-out;
 }
@@ -136,6 +137,7 @@ export default {
 @media (min-width: 1025px) {
     .pop-up-inner{
         width: 50%;
+        height:500px;
     }
     .pop-up-body{
         width:100%;

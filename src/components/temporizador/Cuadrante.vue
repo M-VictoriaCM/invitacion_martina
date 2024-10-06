@@ -34,7 +34,8 @@ export default {
     min-width: 100vw;
     height: 150px;
     position: absolute;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    z-index: -1;
 }
 
 .background_count {

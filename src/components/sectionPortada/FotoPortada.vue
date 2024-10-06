@@ -26,7 +26,7 @@ export default {
 </template>
 <style>
 .cardSectionPort {
-  max-width: 98%;
+  max-width: 90%;
   height: 220px;
   position: relative;
 }
@@ -67,14 +67,20 @@ export default {
 }
 @media (min-width: 1025px) {
     .cardSectionPort{
-        min-width:52%;
-        height:300px;
+        width:100%;
+        height:430px;
         display: flex;
         align-items: center;
-        margin-left: 2%;
+        border-radius:30px;
     }
     .cardSectionPort img {
-        height:405px;
+        height:400px;
+        border-radius:30px;
+    }
+    .overlay {
+        width:100%;
+        height:100%;
+        border-radius:28px;
     }
 
 }

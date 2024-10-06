@@ -100,6 +100,7 @@ export default {
 <style scoped>
 .contentSlide {
     display: flex;
+    width:360px;
     height: 360px;
     align-items: center;
     justify-content: center;
@@ -109,7 +110,8 @@ export default {
 
 .wrapper {
     display: flex;
-    width: 100%;
+    max-width: 100%;
+    height: 360px;
     position: relative;   
     border-radius: 9px;
 }
@@ -176,18 +178,27 @@ export default {
     margin-left: 0px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .contentSlide{
+    height:500px;
+    width:800px;
+  }
     .wrapper{
+      display: flex;
+    align-items: center;
+    justify-content: center;
         max-width: 900px;
+        height:500px;
     }
    
     .carousel img {
         width: 100%;
+        height:400px;
     }
 }
 @media (min-width: 1025px) {
     .contentSlide {
+      width:1200px;
         height:auto;
-        
     }
 
     .wrapper {

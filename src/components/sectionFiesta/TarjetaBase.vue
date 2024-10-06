@@ -24,26 +24,26 @@ export default {
 }
 </script>
 <template>
-  <div data-aos="fade-right" class="container__card">
+  <div class="container__card" >
     <div class="container__line">
-      <div class="card__image">
-        <div class="icon__card">
+      <div class="card__image" data-aos="zoom-in">
+        <div class="icon__card" >
           <slot name="icon"></slot>
         </div>
       </div>
   
-      <div class="card__content">
+      <div class="card__content" >
         <div class="card__content-text">
-          <slot name="content"></slot>
+          <slot name="content" data-aos="zoom-in"></slot>
         </div>
       </div>
   
-      <div class="card__footer">
+      <div class="card__footer" data-aos="zoom-in">
         <div class="card__footer-code">
           <CodigoBarra />
-          <p class="number__code">{{ numberCode }} </p>
-          <h1 class="title__code">{{ titleCode }}</h1>
-          <h2 class="title__code">{{ subtitleCode }}</h2>
+          <p class="number__code" >{{ numberCode }} </p>
+          <h1 class="title__code" >{{ titleCode }}</h1>
+          <h2 class="title__code" >{{ subtitleCode }}</h2>
         </div>
       </div>
     </div>
@@ -164,7 +164,12 @@ export default {
     height: 420px;
   }
 }
-
+@media (min-width: 768px) and (max-width: 991px) {
+  .container__card {
+    width: 260px;
+    height: 550px;
+  }
+}
 @media (min-width: 1025px) {
   .container__card {
     width: 900px;

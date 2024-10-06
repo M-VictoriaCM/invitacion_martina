@@ -49,7 +49,8 @@ export default {
 </script>
 <template>
     <div class="container__redes">
-        <div data-aos="zoom-in-up" class="content__redes">
+        <div class="contenedor_redes">
+            <div data-aos="zoom-in-up" class="content__redes">
             <h1 class="title_redes">{{ title }}</h1>
             <h2 class="subtitle_redes">{{ subtitle }}</h2>
             <icon-instagram class="icon__redes"/>
@@ -74,22 +75,25 @@ export default {
                     class="shape-fill"></path>
             </svg>
         </div>
+        </div>
     </div>
 </template>
 
 <style scoped>
 .container__redes {
-    padding:1rem;
     width: 100%;
-    max-width: 100%;
     height: 400px;
     position: absolute;
     background: var(--color_txt__light);
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_redes{
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
 }
 .content__redes{
     display: flex;

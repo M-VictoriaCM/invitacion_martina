@@ -25,7 +25,7 @@ export default {
 <template>
     <popup-base :title="modalTitle" >
         <template #icon>
-            <div class="circle">
+            <div >
                     <IconLocation class="icon__circle"/>
             </div>
         </template>
@@ -119,6 +119,11 @@ export default {
     }
     .btn-primary{
         width:50%;
+    }
+    .map{
+    margin-top:.5rem;
+    width:260px;
+    height:240px;
     }
 }
 

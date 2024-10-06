@@ -32,7 +32,9 @@ export default {
 </script>
 <template>
     <div class="container__invitacion">
+        <!--Portada-->
         <SectionPortadaVue class="portada" />
+        <!--Timer-->
         <div class="content_cuadrante">
             <Cuadrante />
         </div>
@@ -57,13 +59,13 @@ export default {
                 </div>
             </div>
             <SectionFooter />
-        </div>
+        </div> 
     </div>
 </template>
 <style>
 .container__invitacion {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,27 +78,22 @@ export default {
     justify-content: center;
     position: relative;
     margin-bottom: 3rem;
-    margin-top: 1.2rem;
 }
 
 .redes {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    height: 400px;
 }
 
 .sectionRedes {
-    width: 100%;
-    max-width: 1200px;
+    width:100%;
 }
 
 .section__footer {
     width: 100%;
     height: 250px;
-    margin-top: 350px;
-    padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -138,7 +135,7 @@ export default {
 }
 
 .opcion {
-    font-size: var(--font-11);
+    font-size: .75rem;
     text-align: center;
     color: var(--color__secundario);
     text-decoration: none;
@@ -146,7 +143,7 @@ export default {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .content_cuadrante {
-        margin-top: -3rem;
+        margin-top: 0;
     }
 }
 
@@ -171,13 +168,23 @@ export default {
     }
 
     .container_section_footer {
-        width: 800px;
+        width: 900px;
         height: 100%;
         margin-top: 2.8rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: end;
+        align-items: flex-end;
+    }
+    .content__title_footer{
+        margin-bottom:2rem;
+    }
+    .opciones{
+        height:100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom:3rem;
     }
 }
 </style>

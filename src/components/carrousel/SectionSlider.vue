@@ -10,13 +10,16 @@ export default {
 }
 </script>
 <template>
-    <div class="sectionSlider__content">
+    <div class="sectionSlider__content" data-aos="zoom-out-down">
         <ImageSlider/>
     </div>
 </template>
 <style>
 .sectionSlider__content{
-    margin: .5rem 0;
+    margin-top:1rem;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    
 }
 @media (min-width: 1025px) {
     .sectionSlider__content{

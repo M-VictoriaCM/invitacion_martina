@@ -59,7 +59,7 @@ export default {
 <template>
     <popup-base :title="title" >
         <template #icon>
-            <div class="circle">
+            <div >
                 <icon-party class="icon__circle"></icon-party>
             </div>
         </template>

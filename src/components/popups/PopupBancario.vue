@@ -207,7 +207,7 @@ export default {
     }
 
     .pop-up-inner {
-        width: 50%;
+        width: 100%;
     }
     .icon__circle{
         width:50px;
@@ -224,10 +224,11 @@ export default {
 
     .pop-up-footer {
         width: 100%;
+        height:60%;
+    }
+    .btn_popup {
+    width: 100%;
     }
 
-    .btn-primary {
-        width: 70%;
-    }
 }
 </style>

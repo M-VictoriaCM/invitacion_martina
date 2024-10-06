@@ -1,9 +1,9 @@
 <template>
-    <div class="container__film">
+    <div class="container__film" >
         <div class="content left">
             <div class="cuadrado" v-for="n in 32" :key="'left-' + n"></div>
         </div>
-        <div class="content right">
+        <div class="content right" >
             <div class="cuadrado" v-for="n in 32" :key="'right-' + n"></div>
         </div>
     </div>
@@ -11,6 +11,7 @@
 <style>
 .container__film {
     width: 100%;
+    height:100vh;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -51,13 +52,22 @@
     }
 
     .content {
-        width: 2rem;
+        width: 3.5rem;
     }
 
     .cuadrado {
-        width: 2rem;
-        height: 2.3rem;
+        width: 3rem;
+        height: 3.5rem;
         margin-bottom: 2rem;
+        border-radius:10px;
+    }
+
+    .left {
+        left: .75rem;
+    }
+
+    .right {
+        right: .75rem;
     }
 }
 
@@ -67,13 +77,20 @@
     }
 
     .content {
-        width: 3rem;
+        width: 4rem;
     }
 
     .cuadrado {
-        width: 3rem;
-        height: 3.3rem;
+        width: 4rem;
+        height: 4.3rem;
         margin-bottom: 3rem;
+    }
+    .left {
+        left: 1rem;
+    }
+
+    .right {
+        right: 1rem;
     }
 }
 </style>

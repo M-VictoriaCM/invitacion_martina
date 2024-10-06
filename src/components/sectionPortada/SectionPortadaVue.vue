@@ -12,22 +12,26 @@ export default {
 </script>
 <template>
     <div data-aos="fade-up" class="container_section">
-        <FotoPortada class="foto" />
-        <CardInvitacion class="invitacion" />
+        <div class="content_sectionPortada">
+            <FotoPortada class="foto" />
+            <CardInvitacion class="invitacion" />
+        </div>
     </div>
 </template>
 <style>
 
 .container_section {
     width: 100%;
-    height: 440px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position:relative;
-    z-index: 3;
 }
-
+.content_sectionPortada{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .foto {
     width: 100%;
     height: auto;
@@ -38,7 +42,7 @@ export default {
 .invitacion {
     width: 85%;
     position: absolute;
-    margin-top: 70%;
+    bottom:0;
 }
 
 @media (max-width: 360px) {
@@ -50,32 +54,42 @@ export default {
 @media (min-width: 768px) and (max-width: 991px) {
     .container_section {
         width: 100%;
-        height: 750px;
+        height: 700px;
     }
 
     .invitacion {
-        width: 85%;
+        width: 70%;
         position: absolute;
-        margin-top: 50%;
+        bottom:0;
     }
 }
 
 @media (min-width: 1025px) {
     .container_section {
-        min-width: 80%;
-        height: 430px;
+        width: 95%;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content_sectionPortada{
+        width: 100%;
+        display:flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
-        margin-top: 2rem;
     }
+    .foto{
+        width:60%;
+        height: 95%;
+    }
+    .invitacion{
+        width:50%;
+        height:96%;
+        right:0;
+    }
+    
 
-    .foto,
-    .invitacion {
-        width: 45%;
-        margin-top: 0;
-    }
+    
 
 }
 </style>

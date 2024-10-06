@@ -26,16 +26,21 @@ export default {
 .card_container {
   background: var(--color__principal);
   display: flex;
+  width:100%;
+  height:180px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-  padding: 1rem;
 }
 
 .card_content_body {
   color: var(--color_txt__light);
   text-align: center;
+  width:80%;
+  height:90%;
+  display: flex;
+  flex-direction:column;
 }
 
 .card_txt {
@@ -68,6 +73,7 @@ export default {
   .card_container {
     max-width: 220px;
     height: 150px;
+    
   }
   
   .section__title {
@@ -87,7 +93,7 @@ export default {
   .card_container {
     max-width: 100%;
     height: 300px;
-    
+    border-radius: 20px;
   }
   .card_content_body{
     width:80%;
@@ -112,37 +118,39 @@ export default {
 }
 @media (min-width: 1025px) {
   .card_container {
-    min-width:40%;
-    height: 405px;
-    margin-left:53%;
+    width:100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-radius:30px;
   }
   .card_content_body{
-    width:95%;
+    width:80%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
   }
+ 
   .card_txt{
     font-size: var(--font-size_18);
     margin-top: none;
   }
 
   .section__title {
-    font-size: 96px;
+    font-size: 72px;
     margin-top:2rem;
   }
 
   .section__subtitle {
-    font-size: 46px;
+    font-size: 44px;
     margin-top:1rem;
   }
 
   .card_text1 {
-    font-size: var(--font-size_24);
+    font-size: var(--font-size_18);
   }
 
 }

@@ -11,10 +11,7 @@ export default {
 }
 </script>
 <template>
-    <div class="marco__section-card"
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500">
+    <div class="marco__section-card">
         <CardBase/>
     </div>
 </template>

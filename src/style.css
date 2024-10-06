@@ -5,7 +5,7 @@
     --color__background:rgb(213, 213, 213);
     --color_txt__light: rgb(255, 255, 255);
     --color__principal: rgb(243, 190, 190);
-    --color__secundario: rgb(211, 132, 135); 
+    --color__secundario: #d38487; 
     --color__timer:#B8B2B2;   
     /*--------- fuente ----------*/
     --font__principal: 'Northwell', sans-serif;

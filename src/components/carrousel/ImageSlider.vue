@@ -105,7 +105,6 @@ export default {
     align-items: center;
     justify-content: center;
     padding:0 1rem;
-
 }
 
 .wrapper {
@@ -173,6 +172,7 @@ export default {
     object-fit: cover;
     transition: transform 0.5s ease-in-out; 
     border-radius: 9px;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.5);
 }
 .carousel img:first-child {
     margin-left: 0px;
@@ -197,17 +197,22 @@ export default {
 }
 @media (min-width: 1025px) {
     .contentSlide {
-      width:1200px;
-        height:auto;
+      width:980px;
+      height:400px;
     }
 
     .wrapper {
         max-width: 1200px;
+        height: 400px;
     }
 
     .carousel img {
         width: calc(100%/3);
         height:400px;
+    }
+    img{
+      width:360px;
+      box-shadow: (--color__overlay);
     }
 }
 </style>

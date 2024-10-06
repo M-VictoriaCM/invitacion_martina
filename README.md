@@ -15,3 +15,5 @@ npm install vue-router@4
 ```
 npm install sweetalert2
 ```
+## Deploy:
+https://m-victoriacm.github.io/invitacion_martina/
